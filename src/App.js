@@ -9,13 +9,18 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div className="App">
-          <h1>Simple SPA</h1>
-            <ul className="header">
-              <li><NavLink exact to="/">Home</NavLink></li>
-              <li><NavLink to="/articles">Articles</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
-            </ul>
+        <div className="app-container">
+          <div className="banner">
+            <h1>DownThematrix Blog</h1>
+          </div>
+          <nav id="navbar">
+            <ul className="navlist">
+                <li><NavLink exact to="/">Home</NavLink></li>
+                <li><NavLink to="/articles">Posts</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
+              </ul>
+          </nav>
+
             <div className="content">
               <Route exact path="/" component={Home} />
               <Route path="/articles" component={Articles} />
