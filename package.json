@@ -1,9 +1,10 @@
 {
-  "name": "Bruno Mazza | Personal Blog",
+  "name": "bruno-mazza-blog",
+  "author": "bruno mazza",
+  "description": "my personal blog website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass": "^4.11.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-router-dom": "^4.3.1",
