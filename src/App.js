@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import "./css/style.css";
-import Home from "./Home";
-import Articles from "./Articles";
-import Contact from "./Contact";
+import Home from "./components/Home";
+import Articles from "./components/Articles";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 class App extends Component {
@@ -17,14 +17,14 @@ class App extends Component {
           <nav id="navbar">
             <ul className="navlist">
                 <li><NavLink exact to="/">Home</NavLink></li>
-                <li><NavLink to="/articles">Posts</NavLink></li>
+                <li><NavLink to="/posts">Posts</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
               </ul>
           </nav>
 
             <div className="content">
               <Route exact path="/" component={Home} />
-              <Route path="/articles" component={Articles} />
+              <Route path="/posts" component={Articles} />
               <Route path="/contact" component={Contact} />
             </div>
             {/* Footer */}
