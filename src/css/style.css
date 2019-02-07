@@ -194,6 +194,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .8rem;
 }
 
+
+
 /* Footer */
 #footer {
   padding: 2rem;
@@ -205,5 +207,5 @@ h1, h2, h3, h4, h5, h6 {
 #footer p {
   font-size: 1.3rem;
   font-family: var(--font-secondary);
-  font-weight: 600;
+  font-weight: 400;
 }
