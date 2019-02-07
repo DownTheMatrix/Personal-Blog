@@ -8,6 +8,10 @@ const Contact = (props) => {
             <div className="contact-portrait">
                 <img src={portrait} alt=""/>
             </div>
+
+            <div className="contact-heading">
+                <h2>Let's talk about your ideas!</h2>
+            </div>
         
             <div className="form-container container">
 
