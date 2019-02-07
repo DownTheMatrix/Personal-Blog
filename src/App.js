@@ -4,6 +4,7 @@ import "./css/style.css";
 import Home from "./Home";
 import Articles from "./Articles";
 import Contact from "./Contact";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
@@ -11,7 +12,7 @@ class App extends Component {
       <HashRouter>
         <div className="app-container">
           <div className="banner">
-            <h1>DownThematrix Blog</h1>
+            <h1>DownThematrix</h1>
           </div>
           <nav id="navbar">
             <ul className="navlist">
@@ -26,6 +27,8 @@ class App extends Component {
               <Route path="/articles" component={Articles} />
               <Route path="/contact" component={Contact} />
             </div>
+            {/* Footer */}
+            <Footer />
         </div>
       </HashRouter>
     );
