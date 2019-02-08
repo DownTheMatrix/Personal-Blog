@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navlist li {
   list-style-type: none;
-  padding: 2rem;
+  padding: 2rem 4rem;
   transition: all .3s ease;
 }
 
@@ -290,6 +290,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f3440e;
   color: var(--text-primary-color);
 }
+
+/* Component: Articles */
+
 
 
 /* Footer */
