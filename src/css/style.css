@@ -52,6 +52,7 @@ html {
 
 body {
   line-height: 1.6;
+  background-color: var(--light-primary-color);
 }
 
 /* .app-container {
@@ -114,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navlist li {
   list-style-type: none;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   transition: all .3s ease;
 }
 
@@ -143,6 +144,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Component: Home */
+#home {
+  
+}
+
 .home-container {
   padding: 5rem;
 }
@@ -151,12 +156,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
   text-align: center;
   font-family: var(--font-primary)
-}
-
-@media (max-width: 767px) {
-  .inner-grid h2 {
-    text-align: left;
-  }
 }
 
 .home-text p {
@@ -175,12 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0 4rem 0;
   display: flex;
   align-content: center;
-}
-
-@media (min-width: 768px) {
-  .external-wrapper {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .img-container {
