@@ -195,6 +195,10 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100vh;
 }
 
+.contact-wrapper {
+  padding: 2rem;
+}
+
 @media (max-width: 500px) {
   html {
     font-size: 50%;
@@ -210,6 +214,12 @@ h1, h2, h3, h4, h5, h6 {
 .contact-heading h2 {
   font-size: 2.5rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .contact-heading h2 {
+    font-size: 2rem;
+  }
 }
 
 .contact-portrait {
@@ -229,19 +239,13 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 2rem .3rem rgba(14, 110, 206, 0.7);
   background-color: var(--default-primary-color);
   padding: 2rem;
+  max-width: 50rem;
 }
 
 .contact-form {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
-  
-}
-
-@media (min-width: 768px) {
-  .contact-form {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .field {
