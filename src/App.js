@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 import "./css/style.css";
+import Banner from "./components/Banner";
+import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import Articles from "./components/Articles";
 import Contact from "./components/Contact";
@@ -11,23 +13,13 @@ class App extends Component {
     return (
       <HashRouter>
         <div className="app-container">
-          <div className="banner">
-            <h1>DownThematrix</h1>
-          </div>
-          <nav id="navbar">
-            <ul className="navlist">
-                <li><NavLink exact to="/">Home</NavLink></li>
-                <li><NavLink to="/posts">Posts</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
-              </ul>
-          </nav>
-
+            <Banner />
+            <Navigation />
             <div className="content">
               <Route exact path="/" component={Home} />
               <Route path="/posts" component={Articles} />
               <Route path="/contact" component={Contact} />
             </div>
-            {/* Footer */}
             <Footer />
         </div>
       </HashRouter>
