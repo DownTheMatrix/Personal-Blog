@@ -5,7 +5,7 @@
 
   --dark-primary-color: #1976d2;
   --default-primary-color: #2196f3;
-  --light-primary-color: #bbdefb;
+  --light-primary-color: #f7f7f7;
   --text-primary-color: #ffffff;
   --accent-color: #ff5722;
   --primary-text-color: #212121;
@@ -149,13 +149,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-container {
-  padding: 5rem;
+  padding: 3rem;
+  margin-top: 3rem;
 }
 
 .inner-grid h2 {
   font-size: 3rem;
   text-align: center;
-  font-family: var(--font-primary)
 }
 
 .home-text p {
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-.img-container {
+/* .img-container {
   width: 20rem;
 }
 
@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   display: block;
   border-radius: .8rem;
-}
+} */
 
 /* Component: Contact */
 #contact {
@@ -197,6 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-wrapper {
   padding: 2rem;
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 500px) {
@@ -294,12 +295,55 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+.posts-text {
+  margin-top: 3rem;
+  padding: 3rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.posts-text h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.posts-text p {
+  font-size: 1.8rem;
+  font-family: var(--font-secondary);
+  padding-bottom: 3rem;
+  border-radius: 1rem;
+}
+
+.quote {
+  padding: 1.5rem;
+  background-color: #ccc;
+  border-radius: .5rem;
+  margin-bottom: 3rem;
+}
+
+.quote p::before {
+  content: '\201C';
+}
+
+.quote p::after {
+  content: '\201D';
+}
+
+.code-block {
+  font-size: 1.6rem;
+  font-family: monospace;
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
 
 /* Footer */
 #footer {
   padding: 2rem;
   text-align: center;
-  background-color: var(--light-primary-color);
+  background-color: #bbdefb;
   width: 100%;
 }
 
