@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  line-height: 2;
+  line-height: 1.6;
   background-color: var(--light-primary-color);
 }
 
@@ -312,7 +312,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.8rem;
   font-family: var(--font-secondary);
   padding-bottom: 3rem;
-  border-radius: 1rem;
 }
 
 .quote {
@@ -320,6 +319,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ccc;
   border-radius: .5rem;
   margin-bottom: 3rem;
+}
+
+.quote p {
+  padding-bottom: 0;
 }
 
 .quote p::before {
@@ -337,6 +340,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding: 1.5rem;
   margin-bottom: 3rem;
+  overflow: auto;
 }
 
 /* Footer */
