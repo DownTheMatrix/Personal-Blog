@@ -60,8 +60,8 @@ observer.observe(sectionScroll);
               <pre><code>{codeSnippetOne}</code></pre>
             </div>
 
-            <p>Where <code>root</code> is the element, also known as the <strong>target</strong>, that intersects either the device viewport or a custom element we can specify. By default it's set to <code>null</code>, which means that it's going to watch for intersection changes with regard to the document's viewport. <code>threshold</code> os a representation of the percentage of the target element which is visible as a value between 0.0 and 1.0. In the example above, 1.0 means that when 100% of our target is visible within whatever is specified in the <code>root</code>, the the callback function is invoked.
-            Whatever is your choice, the API executes a callback function we provide as soon as the visibility of the target element changes.</p>
+            <p>Where <code>root</code> is the element, also known as the <strong>target</strong>, that intersects either the device viewport or a custom element we can specify. By default it's set to <code>null</code>, which means that it's going to watch for intersection changes with regard to the document's viewport. <code>threshold</code> is a representation of the percentage of the target element which is visible as a value between 0.0 and 1.0. In the example above, 1.0 means that when 100% of our target is visible within whatever is specified in the <code>root</code>, then the callback function is invoked.
+            Whatever is our choice, the API executes a callback function we provide as soon as the visibility of the target element changes.</p>
             <p>Say we want to trigger some animation as soon as the user scrolls down the page below our hero section. In this case, we need to specify a custom element, say a <code>div</code> with the class of "wrapper", in the <code>options</code> object:</p>
 
             <div className="code-block">
