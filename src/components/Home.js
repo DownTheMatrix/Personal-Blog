@@ -1,16 +1,16 @@
 import React from "react";
-import portrait from "../img/portrait.jpg";
+/* import portrait from "../img/portrait.jpg"; */
 
-const Home = (props) => {
+const Home = () => {
     return (
         <section id="home" className="home-container container">
             <div className="home-text">
                 <div className="inner-grid">
                     <h2>Welcome to my blog!</h2>
                     <div className="external-wrapper">
-                        <div className="img-container">
+                        {/* <div className="img-container">
                             <img src={portrait} alt="Author Portrait"/>
-                        </div>
+                        </div> */}
                     </div>   
                     <p>After procrastinating for (too) long, I finally decided to start my own blog. The enthusiasm, in this case, is doubled as I not only will provide the content for the blog, but I'm also responsible for the creation of this small website! If you want to know, I made it with CSS Flexbox, CSS Grid (which it's awesome) and some React Router magic.</p>
                     <p>My name is Bruno, I was born in Rome, Italy, and for most of my life, my interests and passions revolved mainly around cinema, literature, languages and sailing. Yeah, I also have some direct experience onboard <i className="fas fa-ship"></i>. 
